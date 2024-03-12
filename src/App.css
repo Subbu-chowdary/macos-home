@@ -1,0 +1,58 @@
+/* Window.css */
+.window {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.window.minimized {
+  display: none;
+}
+
+.window.maximized {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.window.expanded {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.window-header {
+  background-color: #333;
+  color: white;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.window-title {
+  flex-grow: 1;
+  font-weight: bold;
+}
+
+.window-expand,
+.window-minimize,
+.window-maximize,
+.window-close {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.window-content {
+  padding: 16px;
+}

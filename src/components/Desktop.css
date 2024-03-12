@@ -1,0 +1,75 @@
+/* src/components/Desktop.css */
+@font-face {
+  font-family: "SF Pro Display";
+  src: local("SF Pro Display"),
+    url("/Users/subbukethineni/Desktop/REACT/macos-home-screen/SF-Pro.ttf")
+      format("opentype");
+  /* Add more font-face rules for different font weights and styles if needed */
+}
+
+.desktop {
+  /* Your existing styles */
+  font-family: "SF Pro Display", Arial, sans-serif;
+}
+
+/* Add more styles as needed */
+
+/* src/components/Desktop.css */
+.desktop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/Users/subbukethineni/Desktop/REACT/macos-home-screen/macos-sonoma-6016x6016-11573.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.taskbar {
+  height: 40px;
+  position: static;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: saturate(180%) blur(10px);
+  /* Semi-transparent color for the backdrop */
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
+}
+
+.taskbar-item {
+  margin-right: 20px;
+  cursor: pointer;
+  color: wheat;
+}
+
+.desktop-icons {
+  flex-wrap: wrap;
+  padding: 20px;
+  width: min-content;
+  z-index: -2;
+}
+
+.desktop-icon {
+  width: 60px; /* Adjust the width as needed */
+  height: 60px; /* Adjust the height as needed */
+  background-color: none !important;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.desktop-icon img {
+  max-width: 80px; /* Adjust the max-width as needed */
+  max-height: 80px; /* Adjust the max-height as needed */
+  margin-bottom: 5px;
+}
+.desktop-icon {
+  color: white;
+}
